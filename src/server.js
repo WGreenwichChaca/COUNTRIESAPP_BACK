@@ -8,7 +8,7 @@ const server = express();
 server.use(morgan("dev"));
 server.use(express.json());
 server.use(cors());
-    origin: 'https://countriesapp-back.vercel.app/countries',
+    origin: 'http://localhost:5000',
 server.use(router);
 
 module.exports = server;

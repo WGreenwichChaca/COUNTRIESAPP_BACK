@@ -7,7 +7,7 @@ const axios = require('axios');
 const updateDatabase = async () => {
     try {
         // Realizamos la solicitud a la API
-        const response = await axios.get('https://countriesapp-back.vercel.app/countries');
+        const response = await axios.get('http://localhost:5000/countries');
         const countries = response.data;
 
         // Mapeamos y filtramos los datos para el modelo Country
